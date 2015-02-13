@@ -1,7 +1,7 @@
 Python para Zumbis - Python4Zumbis
 =============
 
-Repositório para exemplos e exercícios durante o curso gratuito Python para Zumbis disponível em [PyCurson](http://pycursos.com/python-para-zumbis/)
+Repositório para exemplos e exercícios realizados durante o curso gratuito Python para Zumbis disponível em [PyCurson](http://pycursos.com/python-para-zumbis/)
 
 Author
 ------
