@@ -1,3 +1,4 @@
+# coding=utf-8
 number = int(input('Informe um número:'))
 n = 0
 while n <= number:

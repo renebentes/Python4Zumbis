@@ -109,13 +109,15 @@ txtB = '''pwbfdmtc jms gswg wvsscb ffq lbrhbn lcxc hcr thc mghts vkgfc nrvfgs
     tvcgnrb zgdsp tqlqrf vjqqxsp pwj pgft cvl cvr cnhgxsd lkd qlw vwtbh mfxs
     gbgw'''.split()
 
+alfabeto = 'zmbtshjpnwlrcxkqvdgf'
+
 
 def QuestaoA(s):
     k = 0
     for c in s:
         if c[:1] in 'zmb' and c[-1:] not in 'zmb':
             k += 1
-    print('Preposições: %d' % k)
+    print('A; %d' % k)
 
 
 def QuestaoB(s):
@@ -123,7 +125,7 @@ def QuestaoB(s):
     for c in s:
         if len(c) == 7 and c[-1:] not in 'zmb':
             k += 1
-    print('Verbos: %d' % k)
+    print('B; %d' % k)
 
 
 def QuestaoC(s):
@@ -131,8 +133,37 @@ def QuestaoC(s):
     for c in s:
         if len(c) == 7 and c[-1:] not in 'zmb' and c[:1] not in 'zmb':
             k += 1
-    print('Verbos em 1ª Pessoa: %d' % k)
+    print('C; %d' % k)
 
-QuestaoA(txtA)
-QuestaoB(txtA)
-QuestaoC(txtA)
+
+def QuestaoD(s):
+    for c in s:
+        t = ''
+        for x in range(len(c)):
+            t += chr(alfabeto.find(c[x]) + 65)
+        s[s.index(c)] = t
+    s.sort()
+
+    for c in s:
+        t = ''
+        for x in range(len(c)):
+            t += alfabeto[ord(c[x]) - 65]
+        s[s.index(c)] = t
+    print('D; %s' % s)
+
+
+def QuestaoE(s):
+    m = []
+    for c in s:
+        soma = 0
+        for x in range(len(c)):
+            soma += alfabeto.find(c[x]) * (20 ** x)
+        if soma % 42 == 0 and len(c) == len(set(c)):
+            m.append(c)
+    print('E; %d - %s' % (len(m), m))
+
+QuestaoA(txtB)
+QuestaoB(txtB)
+QuestaoC(txtB)
+QuestaoD(txtB)
+QuestaoE(txtB)
