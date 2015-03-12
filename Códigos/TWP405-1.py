@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 import sqlite3
 
 banco = sqlite3.connect('surfersDB.sdb')

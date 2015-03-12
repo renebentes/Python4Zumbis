@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 from random import randint
 
 sorteado = randint(1, 100)

@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 def embaralha(string):
     import random
     lista = list(string)

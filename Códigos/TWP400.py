@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 f = open('surf.txt')
 notas = {}
 for linha in f:

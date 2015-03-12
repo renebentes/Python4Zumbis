@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 class Televisao:
 
     def __init__(self):

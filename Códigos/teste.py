@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 from tatu import Cliente
 from tatu import Conta
 

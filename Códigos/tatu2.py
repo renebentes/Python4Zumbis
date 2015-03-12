@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 class Cliente:
 
     def __init__(self, nome, telefone):

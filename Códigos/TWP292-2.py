@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 def fatorial(numero):
     fatorial = 1
     for x in range(1, numero):

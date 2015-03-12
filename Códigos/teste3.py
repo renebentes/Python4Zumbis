@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 from tatu3 import Cliente
 from tatu3 import Conta, ContaEspecial
 

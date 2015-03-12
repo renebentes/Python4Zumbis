@@ -1,4 +1,4 @@
-# coding=utf-8
+# coding: utf-8
 import sqlite3
 
 con = sqlite3.connect('alunos.sdb')

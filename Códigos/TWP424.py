@@ -1,8 +1,9 @@
+# coding: utf-8
 import urllib.request
 import json
 
 proxy = urllib.request.ProxyHandler(
-    {'http': r'http://screne:#rmr08\@@10.89.136.250:3128'})
+    {'http': r'http://**:***@1.1.1.1:3128'})
 auth = urllib.request.HTTPBasicAuthHandler()
 opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
 urllib.request.install_opener(opener)
